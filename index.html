@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Tradicional Chinesa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="brand"><span>Yin</span> Medicina Chinesa</h1>
+        <div class="wrapper animate__animated animate__bounceInLeft">
+            <div class="company-info">
+                <h3>Clínica de Acupuntura</h3>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> R. Amador Bueno, 150, Caçapava-SP</li>
+                    <li><i class="fa fa-phone"></i> (12) 99600-1543</li>
+                    <li><i class="fa fa-envelope"></i> clinicayin@gmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Entre em contato</h3>
+                <div class="alert">
+                    Seu formulário foi enviado.
+                </div>
+                <form id="formContato">
+                    <p>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <label for="telefone (whatsApp)">Telefone/Celular</label>
+                        <input type="text" name="telefone" id="telefone" required>
+                    </p>
+                    <p class="full">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" rows="4" id="mensagem"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit">Enviar</button>
+                    </p>                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-sLvGQ1tQ1ds-GdBmo6ak0CIFML1IVwc",
+            authDomain: "forms-td01.firebaseapp.com",
+            databaseURL: "https://forms-td01.firebaseio.com",
+            projectId: "forms-td01",
+            storageBucket: "forms-td01.appspot.com",
+            messagingSenderId: "1082975379700",
+            appId: "1:1082975379700:web:3709c058797c57cbde3ea1"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
